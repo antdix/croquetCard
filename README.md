@@ -29,7 +29,12 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ```sh
 $ heroku create
-$ git push heroku main
+
+or to link repository to existing app
+
+$ heroku git:remote -a hidden-island-03994
+
+$ git push heroku master
 
 $ heroku run python manage.py migrate
 $ heroku open

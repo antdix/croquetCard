@@ -26,12 +26,14 @@ def cash(request):
     outStr = '<body>' \
               '<center><TABLE COLS=3\n border=3>'  \
               '<TR>' \
-              '<TD><center> RandomSeed <center>' \
-              '<TD><center> Inflation <center>' \
-              '<TD><center> Spend <center>' \
+              '<TD><center> Handicap <center>' \
+              '<TD><center> Handicap/Level <center>' \
+              '<TD><center> Result <center>' \
+              '<TD><center> NewIndex <center>' \
               '<TR>' \
               '<TD><center>' + randomSeed + '<center>' \
               '<TD><center>' + inflation + '<center>' \
+              '<TD><center>' + spend + '<center>' \
               '<TD><center>' + spend + '<center>' \
               '</body>' 
 
