@@ -31,7 +31,7 @@ def cash(request):
               '<TD><center> Result <center>' \
               '<TD><center> NewIndex <center>' \
               '<TR>' \
-              '<TD><center>' + randomSeed + '<center>' \
+              'Game 1 <TD><center>' + randomSeed + '<center>' \
               '<TD><center>' + inflation + '<center>' \
               '<TD><center>' + spend + '<center>' \
               '<TD><center>' + spend + '<center>' \
