@@ -18,23 +18,30 @@ def index(request):
 def cash(request):
     # Returns a dictionary in which the values are lists
 
-    print ("asdf")
     params = request.GET
-    randomSeed = params['RandomSeed']
-    inflation = params['InflationMean']
-    spend = params['YearSpend']
+    MyHandicap = params['MyHandicap']
+    MyIndex = params['MyIndex']
+    oppoHandicap1 = params['OppoHandicap1']
+    gameType1 = params['GameType1']
+    result1 = params['Result1']
+    indexChange1 = '+6'
+    newIndex1 = '2345'
     outStr = '<body>' \
-              '<center><TABLE COLS=3\n border=3>'  \
+              '<center><TABLE COLS=4\n border=3>'  \
               '<TR>' \
-              '<TD><center> Handicap <center>' \
+              '<TD><center> Game <center>' \
+              '<TD><center> Oppo Handicap <center>' \
               '<TD><center> Handicap/Level <center>' \
               '<TD><center> Result <center>' \
+              '<TD><center> IndexChange <center>' \
               '<TD><center> NewIndex <center>' \
               '<TR>' \
-              'Game 1 <TD><center>' + randomSeed + '<center>' \
-              '<TD><center>' + inflation + '<center>' \
-              '<TD><center>' + spend + '<center>' \
-              '<TD><center>' + spend + '<center>' \
+              '<TD><center> 1 <center>' \
+              '<TD><center>' + oppoHandicap1 + '<center>' \
+              '<TD><center>' + gameType1 + '<center>' \
+              '<TD><center>' + result1 + '<center>' \
+              '<TD><center>' + indexChange1 + '<center>' \
+              '<TD><center>' + newIndex1 + '<center>' \
               '</body>' 
 
     return HttpResponse(outStr)
