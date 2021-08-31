@@ -91,8 +91,9 @@ def calculateNewIndex (oppoHandicap, gameType, result, MyHandicap, newIndex):
     #print ("indexChange {}".format(indexChange))
 
     newIndex += indexChange
+    NI = int (newIndex)
     
-    return (str(indexChange), str(newIndex))
+    return (str(indexChange), str(NI))
 
 def cash(request):
     # Returns a dictionary in which the values are lists
@@ -279,6 +280,12 @@ def cash(request):
               '<TD><center>' + indexChange + '' \
               '<TD><center>' + newIndex + '' 
 
+    outStr = outStr + '</table><button onclick="goBack()">Go Back</button>' \
+                               ' <script>' \
+                               '     function goBack() {' \
+                               '         window.history.back(); ' \
+                               '     } '\
+                               ' </script> '
     outStr = outStr + '</body>' 
 
     return HttpResponse(outStr)
