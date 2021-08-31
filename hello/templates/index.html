@@ -36,6 +36,7 @@
     						<option value="24">24</option>
 			<td> <CENTER><label for="My Index">My Index</label>
 			<td> <CENTER><input type="number" id="MyIndex" name="MyIndex" step = 1>
+			<td> <CENTER><button type="submit">Calculate</button>
 		</TR>
 	</TABLE>
 	<br>
@@ -48,68 +49,374 @@
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 1 </label>
-			<td><CENTER><input type="number" id="OppoHandicap1" name="OppoHandicap1" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap1" name="OppoHandicap1">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType1" name="GameType1" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result1" name="Result1" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 2 </label>
-			<td><CENTER><input type="number" id="OppoHandicap2" name="OppoHandicap2" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap2" name="OppoHandicap2">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType2" name="GameType2" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result2" name="Result2" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 3 </label>
-			<td><CENTER><input type="number" id="OppoHandicap3" name="OppoHandicap3" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap3" name="OppoHandicap3">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType3" name="GameType3" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result3" name="Result3" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 4 </label>
-			<td><CENTER><input type="number" id="OppoHandicap4" name="OppoHandicap4" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap4" name="OppoHandicap4">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType4" name="GameType4" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result4" name="Result4" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 5 </label>
-			<td><CENTER><input type="number" id="OppoHandicap5" name="OppoHandicap5" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap5" name="OppoHandicap5">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType5" name="GameType5" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result5" name="Result5" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 6 </label>
-			<td><CENTER><input type="number" id="OppoHandicap6" name="OppoHandicap6" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap6" name="OppoHandicap6">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType6" name="GameType6" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result6" name="Result6" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 7 </label>
-			<td><CENTER><input type="number" id="OppoHandicap7" name="OppoHandicap7" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap7" name="OppoHandicap7">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType7" name="GameType7" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result7" name="Result7" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 8 </label>
-			<td><CENTER><input type="number" id="OppoHandicap8" name="OppoHandicap8" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap8" name="OppoHandicap8">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType8" name="GameType8" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result8" name="Result8" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 9 </label>
-			<td><CENTER><input type="number" id="OppoHandicap9" name="OppoHandicap9" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap9" name="OppoHandicap9">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType9" name="GameType9" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result9" name="Result9" value = "Win">
 		</TR>
 		<TR>
 			<td><CENTER><label>Game 10 </label>
-			<td><CENTER><input type="number" id="OppoHandicap10" name="OppoHandicap10" step = 0.5 min = -3>
+			<td><CENTER><select id="OppoHandicap10" name="OppoHandicap10">
+					    	<option value="">Choose</option>
+					    	<option value="-3">-3</option>
+    						<option value="-2.5">-2.5</option>
+    						<option value="-2.0">-2.0</option>
+    						<option value="-1.5">-1.5</option>
+    						<option value="-1.0">-1.0</option>
+    						<option value="-0.5">-0.5</option>
+    						<option value="0">0</option>
+    						<option value="0.5">0.5</option>
+    						<option value="1">1</option>
+    						<option value="1.5">1.5</option>
+    						<option value="2">2</option>
+    						<option value="2.5">2.5</option>
+    						<option value="3">3</option>
+    						<option value="3.5">3.5</option>
+    						<option value="4">4</option>
+    						<option value="4.5">4.5</option>
+    						<option value="5">5</option>
+    						<option value="6">6</option>
+    						<option value="7">7</option>
+    						<option value="8">8</option>
+    						<option value="9">9</option>
+    						<option value="10">10</option>
+    						<option value="11">11</option>
+    						<option value="12">12</option>
+    						<option value="14">14</option>
+    						<option value="16">16</option>
+    						<option value="18">18</option>
+    						<option value="20">20</option>
+    						<option value="22">22</option>
+    						<option value="24">24</option>
 			<td><CENTER><input type="checkbox" id="GameType10" name="GameType10" value="Handicap">
 			<td><CENTER><input type="checkbox" id="Result10" name="Result10" value = "Win">
 		</TR>
 	</TABLE>
-	<br>
-	<div class="button">
-		<CENTER><button type="submit">Calculate</button>
-	</div>
 </form>
 
