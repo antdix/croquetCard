@@ -106,6 +106,15 @@ def cash(request):
     results = []
 
     oppoHandicaps.append(params['OppoHandicap1'])
+    oppoHandicaps.append(params['OppoHandicap2'])
+    oppoHandicaps.append(params['OppoHandicap3'])
+    oppoHandicaps.append(params['OppoHandicap4'])
+    oppoHandicaps.append(params['OppoHandicap5'])
+    oppoHandicaps.append(params['OppoHandicap6'])
+    oppoHandicaps.append(params['OppoHandicap7'])
+    oppoHandicaps.append(params['OppoHandicap8'])
+    oppoHandicaps.append(params['OppoHandicap9'])
+    oppoHandicaps.append(params['OppoHandicap10'])
 
     gt = "Level"
     try:
@@ -121,7 +130,6 @@ def cash(request):
         pass
     results.append(res)
 
-    oppoHandicaps.append(params['OppoHandicap2'])
 
     gt = "Level"
     try:
@@ -133,6 +141,118 @@ def cash(request):
     res = "Lose"
     try:
         res = params['Result2']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType3']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result3']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType4']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result4']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType5']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result5']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType6']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result6']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType7']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result7']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType8']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result8']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType9']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result9']
+    except:
+        pass
+    results.append(res)
+
+    gt = "Level"
+    try:
+        gt = params['GameType10']
+    except:
+        pass
+    gameTypes.append(gt)
+
+    res = "Lose"
+    try:
+        res = params['Result10']
     except:
         pass
     results.append(res)
@@ -149,7 +269,7 @@ def cash(request):
               '<TD><center> IndexChange <center>' \
               '<TD><center> NewIndex <center>' \
 
-    for i in range(0,2):
+    for i in range(0,10):
         if oppoHandicaps[i] != "":
             indexChange,newIndex = calculateNewIndex (float(oppoHandicaps[i]), gameTypes[i], results[i], float(MyHandicap), float(newIndex))
             outStr = outStr + '<TR><TD><center>' + str(i+1) + ''\
