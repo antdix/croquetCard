@@ -1,33 +1,37 @@
 
-<FORM NAME=INFO ACTION=cash/ METHOD=GET>
-	<TABLE>
+<FORM NAME=INFO ACTION=cash/ METHOD=POST>{% csrf_token %}
+	<CENTER> <TABLE BORDER = 3>
 		<TR>
-			<td> <label for="My Handicap">My Handicap</label>
-			<td> <input type="text" id="MyHandicap" name="MyHandicap">
-			<td> <label for="My Index">My Index</label>
-			<td><input type="text" id="MyIndex" name="MyIndex">
+			<td> <CENTER><label for="My Handicap">My Handicap</label>
+			<td> <CENTER><input type="text" id="MyHandicap" name="MyHandicap">
+			<td> <CENTER><label for="My Index">My Index</label>
+			<td> <CENTER><input type="text" id="MyIndex" name="MyIndex">
 		</TR>
 	</TABLE>
 	<br>
-	<TABLE>
+	<CENTER><TABLE BORDER=3>
 		<TR>
-			<td> <label> </label>
-			<td> <label> Oppo Handicap </label>
-			<td> <label> Handicap/Level </label>
-			<td> <label> Result </label>
-			<td> <label> New Index </label>
+			<td> <CENTER><label> </label>
+			<td> <CENTER><label> Oppo Handicap </label>
+			<td> <CENTER><label> Handicap Game? </label>
+			<td> <CENTER><label> Win? </label>
 		</TR>
 		<TR>
-			<td> <label>Game 1 </label>
-			<td><input type="text" id="OppoHandicap1" name="OppoHandicap1">
-			<td><input type="text" id="GameType1" name="GameType1">
-			<td><input type="text" id="Result1" name="Result1">
-			<td><input type="text" id="NewIndex1" name="NewIndex1">
+			<td><CENTER><label>Game 1 </label>
+			<td><CENTER><input type="text" id="OppoHandicap1" name="OppoHandicap1">
+			<td><CENTER><input type="checkbox" id="GameType1" name="GameType1" value="Handicap">
+			<td><CENTER><input type="checkbox" id="Result1" name="Result1" value = "Win">
+		</TR>
+		<TR>
+			<td><CENTER><label>Game 2 </label>
+			<td><CENTER><input type="text" id="OppoHandicap2" name="OppoHandicap2">
+			<td><CENTER><input type="checkbox" id="GameType2" name="GameType2" value="Handicap">
+			<td><CENTER><input type="checkbox" id="Result2" name="Result2" value = "Win">
 		</TR>
 	</TABLE>
 	<br>
 	<div class="button">
-		<button type="submit">Calculate</button>
+		<CENTER><button type="submit">Calculate</button>
 	</div>
 </form>
 
