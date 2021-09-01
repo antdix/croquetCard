@@ -95,13 +95,23 @@ def calculateNewIndex (oppoHandicap, gameType, result, MyHandicap, newIndex):
     
     return (str(indexChange), str(NI))
 
-def cash(request):
+def calculate(request):
     # Returns a dictionary in which the values are lists
 
     params = request.POST
     MyHandicap = params['MyHandicap']
     MyIndex = params['MyIndex']
-    newIndex = MyIndex
+
+    try:
+        newIndex = float(MyIndex)
+    except:
+        outStr = '<body> <center> <h1> Please enter a valid Index </h1> </Body>'  
+        return HttpResponse(outStr)
+
+    if newIndex > 3500:
+        outStr = '<body> <center> <h1> Please enter a valid Index </h1> </Body>'  
+        return HttpResponse(outStr)
+
     oppoHandicaps = []
     gameTypes = []
     results = []
