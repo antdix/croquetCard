@@ -105,11 +105,25 @@ def calculate(request):
     try:
         newIndex = float(MyIndex)
     except:
-        outStr = '<body> <center> <h1> Please enter a valid Index </h1> </Body>'  
+        outStr = '<body> <center> <h1> Please enter a valid Index </h1> '  
+        outStr = outStr + '</table><button onclick="goBack()">Go Back</button>' \
+                               ' <script>' \
+                               '     function goBack() {' \
+                               '         window.history.back(); ' \
+                               '     } '\
+                               ' </script> '
+        outStr = outStr + '</body>' 
         return HttpResponse(outStr)
 
     if newIndex > 3500:
-        outStr = '<body> <center> <h1> Please enter a valid Index </h1> </Body>'  
+        outStr = '<body> <center> <h1> Please enter a valid Index </h1> '  
+        outStr = outStr + '</table><button onclick="goBack()">Go Back</button>' \
+                               ' <script>' \
+                               '     function goBack() {' \
+                               '         window.history.back(); ' \
+                               '     } '\
+                               ' </script> '
+        outStr = outStr + '</body>' 
         return HttpResponse(outStr)
 
     oppoHandicaps = []
@@ -290,7 +304,7 @@ def calculate(request):
               '<TD><center>' + indexChange + '' \
               '<TD><center>' + newIndex + '' 
 
-    outStr = outStr + '</table><button onclick="goBack()">Go Back</button>' \
+    outStr = outStr + '</table><br><button onclick="goBack()">Go Back</button>' \
                                ' <script>' \
                                '     function goBack() {' \
                                '         window.history.back(); ' \
